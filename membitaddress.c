@@ -8,6 +8,8 @@ void	show_binary(int n, int bit)
 	while (i >= 0)
 	{
 		printf("%i", (n >> i) & 1);
+		if (i % 8 == 0 && i > 0)
+			printf(" | ");
 		i--;
 	}
 }
